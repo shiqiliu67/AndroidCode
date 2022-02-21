@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.setting.feedback.FeedbackActivity">
+
+    <data>
+
+        <variable
+            name="feedbackViewModel"
+            type="com.example.thought_leadership.ui.setting.feedback.FeedbackViewModel" />
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottom_sheet_coordinatorLayout"
+            android:scrollbarThumbVertical="@drawable/gradient_acc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            tools:context=".ui.setting.feedback.FeedbackActivity">
+
+
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_return"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:background="?attr/colorPrimary"
+                android:backgroundTint="@color/white"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="?attr/actionBarTheme"
+                app:layout_constraintBottom_toTopOf="@id/relativeLayout_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/graphik_bold"
+                    android:gravity="left"
+                    android:text="Feedback"
+                    android:textColor="@color/black"
+                    android:textFontWeight="900"
+                    android:textSize="32dp" />
+
+                <TextView
+                    android:id="@+id/textView_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView_title"
+                    android:layout_marginBottom="25dp"
+                    android:gravity="left"
+                    android:text="Your feedback helps us improve our app"
+                    android:textColor="#3B3944"
+                    android:textSize="15.5dp" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout_1">
+
+                <TextView
+                    android:id="@+id/text_view_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Feedback category"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/chip_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_view_category"
+                    android:layout_marginTop="8.4dp"
+                    app:chipSpacingHorizontal="24dp"
+                    app:singleLine="false"
+                    app:singleSelection="true">
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip1"
+                        style="@style/CustomChipStyle"
+                        android:layout_width="118dp"
+                        android:layout_height="43dp"
+                        android:text="Suggestion"
+                        android:textAlignment="center"
+                        app:chipStrokeColor="@color/black"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip2"
+                        style="@style/CustomChipStyle"
+                        android:layout_width="118dp"
+
+                        android:layout_height="43dp"
+                        android:text="Issue"
+                        android:textAlignment="center"
+                        app:chipStrokeColor="@color/black"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip3"
+                        style="@style/CustomChipStyle"
+                        android:layout_width="118dp"
+                        android:layout_height="43dp"
+
+                        android:text="Compliment"
+                        android:textAlignment="center"
+                        app:chipStrokeColor="@color/black"
+                        app:chipStrokeWidth="1dp" />
+
+                    <com.google.android.material.chip.Chip
+                        android:id="@+id/chip4"
+                        style="@style/CustomChipStyle"
+                        android:layout_width="118dp"
+                        android:layout_height="43dp"
+                        android:text="Other"
+                        android:textAlignment="center"
+
+                        app:chipStrokeColor="@color/black"
+                        app:chipStrokeWidth="1dp" />
+                </com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:id="@+id/textView_feedback1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/chip_group"
+                    android:layout_marginTop="24dp"
+                    android:gravity="left"
+                    android:text="Please leave your feedback below:"
+                    android:textColor="@color/black"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edit_text_feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:layout_below="@id/textView_feedback1"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/edit_text_background"
+                    android:gravity="start"
+                    android:paddingStart="5dp"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical"
+                    android:text="@={feedbackViewModel.content}" />
+
+                <TextView
+                    android:id="@+id/text_view_add_attachment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/edit_text_feedback"
+                    android:layout_marginTop="18dp"
+                    android:text="Add Attachment"
+                    android:textColor="@color/acc_dark" />
+            </RelativeLayout>
+
+
+            <!--captcha-->
+            <RelativeLayout
+                android:id="@+id/layout_captcha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                <TextView
+                    android:id="@+id/tv_enter_captcha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*Enter Captcha"
+                    android:textColor="@color/black"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/layout_captcha_sub"
+                    android:orientation="horizontal"
+                    android:weightSum="2"
+                    android:layout_below="@id/tv_enter_captcha">
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_background"
+                        android:id="@+id/et_captcha"
+                        android:layout_marginEnd="5dp"
+                        android:paddingStart="5dp"
+                        />
+                    <ImageView
+                        android:id="@+id/iv_showCode"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_marginStart="5dp"/>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+<!--            <com.google.android.material.button.MaterialButton-->
+<!--                android:id="@+id/button_send"-->
+<!--                android:layout_width="343dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:background="@drawable/button_design"-->
+<!--                android:fontFamily="@font/graphik_medium"-->
+<!--                android:text="Send"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="#FFF"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:backgroundTint="#A100FF"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/layout_captcha" />-->
+
+
+            <Button
+                android:id="@+id/button_send"
+                android:layout_width="match_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/layout_captcha"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:textColor="#FFF"
+                android:layout_marginBottom="40dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/button_design"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:fontFamily="@font/graphik_medium"
+                android:textStyle="bold"
+                android:textSize="18dp" />
+
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+        </LinearLayout>
+        </ScrollView>
+
+
+<include android:id="@+id/bottom_sheet_coordinatorLayout"
+    layout="@layout/layout_mini_drawer"
+    />
+
+<!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:id="@+id/bottom_sheet_coordinatorLayout"-->
+<!--            android:background="@drawable/bottom_bg_collapse"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            >-->
+
+
+
+<!--            <FrameLayout-->
+<!--                android:id="@+id/bottom_sheet_main_loading"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="bottom"-->
+<!--                app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:id="@+id/layout_collapse_main_loading"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:visibility="gone"-->
+
+<!--                    >-->
+
+<!--                    &lt;!&ndash;                android:visibility="gone"&ndash;&gt;-->
+
+<!--                    <com.google.android.material.card.MaterialCardView-->
+<!--                        android:layout_marginStart="8dp"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:id="@+id/cv_image"-->
+<!--                        app:cardCornerRadius="10dp"-->
+<!--                        android:layout_centerVertical="true">-->
+
+<!--                        <ImageView-->
+
+<!--                            android:id="@+id/header_image"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:src="@drawable/image_music"-->
+<!--                            />-->
+<!--                    </com.google.android.material.card.MaterialCardView>-->
+
+
+
+<!--                    <TextView-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:id="@+id/tv_title"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_toStartOf="@+id/iv_play_collapse"-->
+<!--                        android:layout_toEndOf="@id/cv_image"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:paddingStart="14dp"-->
+<!--                        android:text="music title3"-->
+<!--                        android:textAppearance="@style/firstroot_g" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/tv_author"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_below="@id/tv_title"-->
+<!--                        android:layout_toStartOf="@+id/iv_play_collapse"-->
+<!--                        android:layout_toEndOf="@id/cv_image"-->
+<!--                        android:maxLines="1"-->
+<!--                        android:paddingStart="14dp"-->
+<!--                        android:text="music author"-->
+<!--                        android:textColor="@android:color/white"-->
+<!--                        android:textSize="14sp"-->
+<!--                        android:visibility="invisible"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/iv_play_collapse"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="50dp"-->
+<!--                        android:layout_alignParentEnd="true"-->
+<!--                        android:layout_centerVertical="true"-->
+<!--                        android:src="@drawable/ic_baseline_pause_24" />-->
+<!--                </RelativeLayout>-->
+
+<!--            </FrameLayout>-->
+<!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="NavigationMainMenuStyle">
+        <!-- menu item text size-->
+        <item name="android:textSize">
+            17sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:gravity">center_vertical</item>
+
+    </style>
+
+    <style name="placeholder">
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+
+    <style name="MyCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">13sp</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--    <style name="MyMainMenuStyle">-->
+    <!--        <item name="android:textSize">98sp</item>-->
+    <!--    </style>-->
+
+    <!--    <item name="android:textColorPrimary">@color/purple_500</item>-->
+    <!--    <item name="android:textColorSecondary">@color/grey</item>-->
+    <!--    <item name="android:background">@color/black</item>-->
+
+    <!--    <item name="colorPrimary">@color/acc</item>-->
+    <!--    <item name="colorPrimaryDark">@color/purple_500</item>-->
+    <!--    <item name="colorAccent">@color/purple_200</item>-->
+
+    <style name="ToolbarThemeSpecificArticle" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+        <item name="android:background">@color/black</item>
+
+        <item name="android:textColor">@color/white</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+
+
+    </style>
+    `
+
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">5.0dp</item>
+        <item name="android:dividerHeight">5dp</item>
+        <item name="android:divider">@color/white</item>
+        <!--<item name="android:popupBackground">#FFF</item>-->
+    </style>
+
+
+    <style name="PopupMenuListView" parent="@style/Widget.AppCompat.ListView.DropDown">
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:divider">@color/white</item>
+    </style>
+
+
+    <style name="CustomChipStyle" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/chip_background_color</item>
+        <item name="android:textColor">@color/chip_text_color</item>
+        <item name="rippleColor">@color/whiteAlpha</item>
+        <item name="chipStrokeColor">@color/chip_stroke_color</item>
+        <item name="chipSpacing">16dp</item>
+
+
+    </style>
+
+    <style name="latest_stor">
+
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="the_europea">
+
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #3B3944
+        </item>
+
+    </style>
+
+    <style name="you_re_miss">
+
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="select_indu">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+
+    </style>
+
+    <style name="your_feed">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="large_butto">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomTabStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+        <item name="lineSpacing">0sp</item>
+        <item name="android:fontFamily">@font/graphik_medium</item>
+
+    </style>
+
+    <style name="experience">
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+
+    <style name="what_are_yo">
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #837F89
+        </item>
+    </style>
+
+    <style name="screen_titl">
+        <item name="android:textSize">
+            30sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+
+    </style>
+
+    <style name="contact_us">
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="customTextInputLayout" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="android:paddingTop">0dp</item>
+        <item name="strokeColor">@color/black</item>
+        <item name="background">@drawable/edit_text_background</item>
+    </style>
+
+    <style name="customAutoComplteTextView">
+        <item name="strokeColor">@color/black</item>
+        <item name="boxBackgroundColor">@color/black</item>
+    </style>
+
+    <style name="no_results">
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="no_results_">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="MainMenuItems">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="don_t_forge">
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="privacy_setting">
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="privacy_checkbox">
+        <item name="android:textSize">
+            14sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="customTextInput" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/mtrl_outlined_stroke_color1</item>
+        <item name="boxStrokeWidth">2dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:drawableEnd">@drawable/ic_drop_down_arrow</item>
+    </style>
+
+    <style name="contact_us_question">
+        <item name="fontFamily">@font/graphik_bold</item>
+    </style>
+
+    <style name="getting_to_">
+
+        <item name="android:textSize">
+            18sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="cloud_susta">
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #A100FF
+        </item>
+    </style>
+
+    <style name="tv_key_insights">
+        <item name="android:textSize">
+            12sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="tile_article">
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="round_image_view_1">
+        <item name="cornerSize">30%</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="following">
+        <item name="android:textSize">
+            15sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+
+    <style name="TabLayoutSearch" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#A100FF</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabSelectedTextColor">@color/black</item>
+        <item name="tabTextColor">@color/black</item>
+        <item name="tabTextAppearance">@style/TabLayoutTextAppearance</item>
+    </style>
+
+    <style name="TabLayoutTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/graphik_semibold</item>
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="tv_header">
+        <item name="android:textSize">
+            13sp
+        </item>
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="tv_following">
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="follow">
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+
+        <item name="android:textColor">
+            #3B3944
+        </item>
+    </style>
+
+    <style name="category_article">
+        <item name="android:textSize">
+            13sp
+        </item>
+        <item name="android:letterSpacing">
+            -0.02
+        </item>
+        <item name="android:textColor">
+            #000000
+        </item>
+    </style>
+
+    <style name="firstroot_g">
+        <item name="android:textSize">
+            16sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.04
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+    <style name="discover_featured">
+        <item name="android:textSize">
+            13sp
+        </item>
+
+        <item name="android:letterSpacing">
+            -0.03
+        </item>
+
+        <item name="android:textColor">
+            #FFFFFF
+        </item>
+    </style>
+
+
+</resources>
