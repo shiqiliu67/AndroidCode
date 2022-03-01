@@ -1,0 +1,11 @@
+  val firstApiFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+                val date = LocalDate.parse(it.published.dateFormat() , firstApiFormat)
+                var month= date.month.toString()
+                month = month.get(0)+month.substring(1).toLowerCase()
+                val theDateStr = "${month} ${date.dayOfMonth} •"
+                binding.textViewDate.text = theDateStr//it.published.dateFormat()
+
+                Picasso.get().load(it.previewUrl).into(binding.imageViewArticle)
+                //single
+                Picasso.get().load(it.previewUrl).into(binding.imageViewArticleSingle)
+                binding.textViewDateLatest.text = theDateStr//it.published.dateFormat()
