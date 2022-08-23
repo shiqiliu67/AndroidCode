@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomCheckbox02" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@null</item>
+        <item name="android:drawableStart">@drawable/custom_checkbox_for_you_industry</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:background">@android:color/transparent</item>
+
+    </style>
+</resources>

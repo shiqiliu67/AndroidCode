@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChartActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="5dp"
+        android:id="@+id/toolbar_return"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:backgroundTint="@color/white"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/layout_other"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:id="@+id/layout_chart">
+
+            <TextView
+                android:id="@+id/tv_chart_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:lineSpacingExtra="5dp"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/view_underline"
+                android:layout_width="32dp"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_chart_tag"
+                android:layout_marginStart="8dp"
+                android:background="#cccccc"
+                android:backgroundTint="@color/acc_dark"
+                />
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_article_title"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/view_underline"-->
+            <!--                android:maxLines="2"-->
+            <!--                android:fontFamily="@font/graphik_bold"-->
+            <!--                android:lineSpacingExtra="5sp"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:layout_marginEnd="8dp"-->
+            <!--                android:layout_marginTop="4dp"-->
+            <!--                android:textAppearance="@style/card_title"-->
+            <!--                android:gravity="center_vertical" />-->
+<!--            <RelativeLayout-->
+<!--                android:layout_below="@id/view_underline"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/layout_title"-->
+<!--                android:layout_marginStart="8dp"-->
+<!--                android:layout_marginEnd="8dp"-->
+<!--                android:layout_marginTop="4dp"-->
+
+<!--                >-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_chart_title"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="@string/from_article"-->
+<!--                    android:textAppearance="@style/chart_title"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:layout_toEndOf="@id/tv_chart_title"-->
+<!--                    android:id="@+id/tv_article_title"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:textAppearance="@style/chart_title"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:breakStrategy="simple" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_chart_link"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_toEndOf="@id/tv_article_title"-->
+<!--                    android:breakStrategy="simple"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:lineSpacingExtra="1sp"-->
+<!--                    android:text="@string/read_more"-->
+<!--                    android:textAppearance="@style/chart_readme" />-->
+<!--            </RelativeLayout>-->
+
+            <WebView
+                android:id="@+id/chart_webview"
+                android:layout_width="match_parent"
+                android:layout_height="461dp"
+                android:layout_below="@id/view_underline"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:scrollbars="vertical"
+                tools:ignore="WebViewLayout" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

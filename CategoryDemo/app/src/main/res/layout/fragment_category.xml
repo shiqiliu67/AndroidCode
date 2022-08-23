@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  >
+
+    <RelativeLayout
+        android:id="@+id/layout_all"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layout_category"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--nav bar-->
+            <RelativeLayout
+                android:id="@+id/navbar"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/tv_header"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="top"
+                    android:lineSpacingExtra="0sp"
+                    android:text="@string/tv_header"
+                    />
+            </RelativeLayout>
+            <!--follow feed-->
+            <RelativeLayout
+                android:id="@+id/layout_following_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/navbar">
+
+                <RelativeLayout
+                    android:id="@+id/follow_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#F2F2F2">
+
+                    <TextView
+                        android:id="@+id/tv_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/tv_following"
+                        android:textStyle="bold" />
+                    <!-- Follow -->
+                    <TextView
+                        android:id="@+id/tv_follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="16dp"
+                        android:gravity="right|center_vertical"
+                        android:lineSpacingExtra="3sp"
+                        android:text="@string/follow"
+                        />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_following"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/follow_header"
+                    android:divider="@color/white"
+                    android:dividerHeight="10.0dp"
+                    android:paddingTop="0dp" />
+            </RelativeLayout>
+            <!--unfollow feed-->
+            <RelativeLayout
+                android:id="@+id/layout_unfollowing_industry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_following_topic">
+
+                <RelativeLayout
+                    android:id="@+id/unfollow_header"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#F2F2F2">
+
+                    <TextView
+                        android:id="@+id/tv_industry"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/tv_industry"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_unfollowing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/unfollow_header"
+                    android:divider="@color/white"
+                    android:dividerHeight="10.0dp"
+                    android:paddingTop="0dp" />
+            </RelativeLayout>
+            <!--unfollow topics-->
+            <RelativeLayout
+                android:id="@+id/layout_unfollowing_topic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_unfollowing_industry">
+
+                <RelativeLayout
+                    android:id="@+id/unfollow_header_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="#F2F2F2">
+
+                    <TextView
+                        android:id="@+id/tv_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:gravity="center_vertical"
+                        android:lineSpacingExtra="0sp"
+                        android:text="@string/tv_theme"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_unfollowing_topic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/unfollow_header_topic"
+                    android:divider="@color/white"
+                    android:dividerHeight="10.0dp"
+                    android:paddingTop="0dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</ScrollView>

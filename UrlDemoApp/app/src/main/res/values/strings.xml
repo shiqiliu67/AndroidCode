@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UrlDemoApp</string>
+    <string name="read_more"><u>Read more</u></string>
+    <string name="from_article">From article: </string>
+</resources>

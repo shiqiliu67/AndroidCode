@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/editor_nav"
+        android:title="Editor's Picks"
+       />
+    <item
+        android:id="@+id/myfeed_nav"
+        android:title="My Feed"
+        />
+    <item
+        android:id="@+id/media_nav"
+        android:title="Mutimedia"
+        />
+    <item
+        android:id="@+id/topic_nav"
+        android:title="Topics"
+        />
+</menu>

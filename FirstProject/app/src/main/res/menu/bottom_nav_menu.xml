@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/explore_nav"
+        android:icon="@drawable/ic_faxian"
+        android:title="@string/explore" />
+    <item
+        android:id="@+id/location_music_nav"
+        android:icon="@drawable/ic_local_yinle"
+        android:title="@string/location_music" />
+    <item
+        android:id="@+id/me_nav"
+        android:icon="@drawable/ic_wode"
+        android:title="@string/my" />
+</menu>
